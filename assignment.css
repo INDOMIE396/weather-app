@@ -1,0 +1,113 @@
+body{
+    background-image: url('./tanjiro-kamado-3840x2160-17622.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.197);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.pic{
+    border-radius: 100%;
+    width: 100%;
+}
+
+.heading1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.input{
+    width: 500px;
+    text-transform: capitalize;
+    height: 20px;
+    padding: 20px 10px;
+    font-size: 18px;
+}
+
+.btn{
+    display: block;
+      margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 30px;
+    width: 50px;
+    border-radius: 2px;
+    border: transparent;
+    background-color: blue;
+    color: white;
+    font-size: large;
+}
+
+.text1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.text2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.heading2{
+    text-align: center;
+}
+
+.job{
+    text-align: center;
+}
+
+
+
+.text1{
+    text-decoration: none;
+}
+
+.frontend{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+.text2{
+    text-align: center;
+}
+
+.Linkedin{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+.text3{
+    text-align: center;
+}
+
+.twitter{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+.text4{
+    text-align: center;
+}
+
+/* feSpecularLighting{
+    font-weight: jsiqiklls;
+    ,stroke-width: display: scrollbar-darkshadow-color: ;;;
+} */

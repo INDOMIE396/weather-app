@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assignment.css">
+</head>
+
+<body>
+    <div class="backgroundcolor">
+        <!-- <img src="./images/tanjiro-kamado-3840x2160-17622.jpg" alt=""> -->
+        <div class="card">
+            <!-- <img class="pic" src="./images/tanjiro-kamado-3840x2160-17622.jpg" alt=""> -->
+
+            x<!-- <h2 class="heading1"><b>Weather App</b></h2> -->
+
+            <input type="search" name="" class="input">
+
+            <button class="btn">Search</button>
+            <div class="weather">
+                <h2 class="heading1"><b>Lagos</b></h2>
+
+                <p class="text1">27&deg;C</p>
+
+                <p class="text2">light rain</p>
+            </div>
+
+            <!-- <h4  class="heading2" style="color: green;">Tokyo, Japan</h4>
+
+        <p class="job"><b>"Demon Slayer"</b></p>
+
+       <div class="github">
+        <p><a href="www,github.com">GitHub</a></p>
+        <p><a href="www.linkedin,com">Linkedin</a></p> -->
+
+            <script>
+                let input, state, temperature, weather, button
+
+                
+                state = document.querySelector(".heading1")
+                temperature = document.querySelector(".text1")
+                weather = document.querySelector(".text2")
+                input = document.querySelector(".input")
+                button = document.querySelector(".btn")
+
+
+                button.addEventListener("click", (event) => {
+                    let user_location = input.value.trim()
+
+                    if (!user_location){
+                        return alert("please enter a city")
+                    }
+
+                    fetch(`http://api.weatherapi.com/v1/current.json?key=ef1a908f37a746bc961103041252407&q=${user_location}&aqi=no`)
+                    .then((response) => response.json()) 
+                    .then((data) => {
+                        state.textContent = data.location.name
+                        temperature.textContent = data.current.temp_c
+                        weather.textContent = data.current.condition.text
+                        // weather.textContent = data.current.condition.text
+                    })
+                })
+
+            </script>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
